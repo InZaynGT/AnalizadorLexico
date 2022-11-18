@@ -1,0 +1,70 @@
+****************************PRUEBA 1**********************************************
+package pkgAnalizadorLéxico;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Jan Carlo
+ */
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        
+        int contador=0;
+        
+        System.out.println("Ingrese la cadena a evaluar:");
+        String sentenciaDescompuesta = scan.nextLine();
+        String[] parts = sentenciaDescompuesta.split(" ");
+        
+        
+        for (int i =1; i<=parts.length;i++){
+            
+            contador = contador +1;
+        }
+        
+        
+        System.out.println("El tamaño de la cadena es de:" + parts.length);
+        System.out.println("Tamaño del contador: " + contador);
+        
+        
+    }
+}
+**********************************************************************************
+´¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨PRUEBA 2¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+package pkgAnalizadorLéxico;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Jan Carlo
+ */
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        int contador = 0;
+
+        System.out.println("Ingrese la cadena a evaluar:");
+        String sentenciaDescompuesta = scan.nextLine();
+        String[] partesSentenciaDescompuesta = sentenciaDescompuesta.split(" ");
+
+        for (int i = 1; i <= partesSentenciaDescompuesta.length; i++) {
+
+            contador = contador + 1;
+        }
+
+        if (partesSentenciaDescompuesta[0].equals("si")){
+            
+            System.out.println("La palabra escrita es: " + partesSentenciaDescompuesta[0]);
+            
+        }
+            
+    }
+}
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
